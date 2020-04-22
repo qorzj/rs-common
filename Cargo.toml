@@ -1,5 +1,5 @@
 [package]
-name = "rs-common"
+name = "rs_common"
 version = "0.1.0"
 authors = ["qorzj <zhangji@parsec.com.cn>"]
 edition = "2018"
