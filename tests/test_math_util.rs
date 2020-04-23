@@ -1,5 +1,5 @@
 extern crate rs_common;
-use rs_common::math_util::{gcd, ceil, floor, angle_of};
+use rs_common::math_util::{gcd, ceil, floor, round, angle_of};
 
 #[test]
 fn test_gcd() {
@@ -8,11 +8,15 @@ fn test_gcd() {
 }
 
 #[test]
-fn test_ceil_and_floor() {
+fn test_ceil_and_floor_and_round() {
     assert_eq!(ceil(567.12), 568);
     assert_eq!(ceil(-100000000000.12), -100000000000);
     assert_eq!(floor(567.12), 567);
     assert_eq!(floor(-100000000000.12), -100000000001);
+    assert_eq!(round(567.12), 567);
+    assert_eq!(round(-100000000000.12), -100000000000);
+    assert_eq!(round(567.5), 568);
+    assert_eq!(round(-100000000000.5), -100000000001);
 }
 
 #[test]

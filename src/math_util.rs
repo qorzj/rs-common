@@ -18,6 +18,10 @@ pub fn floor(a: f64) -> i64 {
     return a.floor() as i64;
 }
 
+pub fn round(a: f64) -> i64 {
+    return a.round() as i64;
+}
+
 pub fn angle_of(radian: f64) -> f64 {
     return radian / PI * 180.0;
 }
