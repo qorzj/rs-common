@@ -7,3 +7,11 @@ pub fn gcd(mut a: u32, mut b: u32) -> u32 {
     }
     a
 }
+
+pub fn ceil(a: f64) -> i64 {
+    return a.ceil() as i64;
+}
+
+pub fn floor(a: f64) -> i64 {
+    return a.floor() as i64;
+}
