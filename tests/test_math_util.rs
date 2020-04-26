@@ -16,6 +16,7 @@ fn test_ceil_and_floor_and_round() {
     assert_eq!(round(567.12), 567);
     assert_eq!(round(-100000000000.12), -100000000000);
     assert_eq!(round(567.5), 568);
+    assert_eq!(round(568.5), 569);
     assert_eq!(round(-100000000000.5), -100000000001);
 }
 
